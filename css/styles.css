@@ -104,6 +104,8 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #0066cc;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 hr {
@@ -671,9 +673,8 @@ progress {
   }
 }
 .custom-box {
- border: 2px solid #007;
- background-color: #f8f9fa;
- color: #343a40;
+ border: 1px solid #ffffff;
+ background-color: #004a80;
  padding: 20px;
  border-radius: 10px;
  margin-top: 20px;
@@ -688,6 +689,22 @@ progress {
 }
 .custom-box li {
   margin-bottom: 10px;
+  color: #ffffff;
+}
+.image-carousel {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.image-carousel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease-in-out;
+}
+.image-carousel img.active {
+  transform: translateY(-100%);
 }
 .row {
   --bs-gutter-x: 1.5rem;
@@ -3775,10 +3792,11 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-  background-color: white;
+  background-color: #004a80;
   text-align: center;
   padding: 15px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4176,7 +4194,7 @@ textarea.form-control-lg {
 }
 
 .navbar a {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
   margin: 0 20px;
   font-weight: bold;
